@@ -1,0 +1,9 @@
+.body {
+  background: transparent
+    radial-gradient(
+      at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%),
+      #260455,
+      rgb(16, 4, 27)
+    )
+    no-repeat 0 0;
+}
