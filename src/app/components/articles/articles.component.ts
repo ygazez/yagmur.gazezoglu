@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-
+import {
+  Dialog,
+  DialogRef,
+  DIALOG_DATA,
+  DialogModule,
+} from '@angular/cdk/dialog';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, DialogModule],
   styleUrl: '../home/home.component.css',
   templateUrl: './articles.component.html',
 })
 export class ArticlesPageComponent {
-  constructor() {
+  constructor(public dialog: Dialog) {
     if (typeof window !== 'undefined') {
       const root = window.document.documentElement;
       window.document.addEventListener('mousemove', (evt) => {
@@ -19,7 +24,6 @@ export class ArticlesPageComponent {
         root.style.setProperty('--mouse-x', x.toString());
         root.style.setProperty('--mouse-y', y.toString());
       });
-      // Your client-side code that uses window goes here
     }
   }
 }

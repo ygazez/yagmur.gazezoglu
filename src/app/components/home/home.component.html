@@ -1,40 +1,67 @@
 <div
   class="w-full body overflow-hidden text-white h-full font-[preahvihear] bg-[#11071F]"
 >
-  <div class="mt-20 pl-12 pr-12 justify-end flex gap-6">
-    <a routerLink="/about-me"> About Me</a>
-    <a routerLink="/articles"> My Articles</a>
+  <div
+    class="flex w-full px-4 mx-2 flex-col xxs:flex-col xs:flex-col md:flex-col lg:flex-row justify-end items-center"
+  >
+    <div class="mt-20 pl-12 pr-12 items-center justify-center flex gap-6">
+      <a class="text-purple-600" routerLink="/about-me"> About Me </a>
+      <a routerLink="/articles"> My Articles</a>
+    </div>
 
-    <a href="https://www.linkedin.com/in/ya%C4%9Fmur-gazezo%C4%9Flu-283150212/">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="2em"
-        height="2em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
-        ></path>
-      </svg>
-    </a>
+    <div class="mt-20 pl-12 pr-12 justify-end items-center flex gap-6">
+      <div class="flex flex-col items-end">
+        <span class="text-base">Yağmur Gazezoğlu</span>
+        <a href="mailto: yagmur.gazezoglu@gmail.com">{{
+          "yagmur.gazezoglu@gmail.com"
+        }}</a>
 
-    <a href="https://github.com/ygazez">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="2em"
-        height="2em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
-        ></path>
-      </svg>
-    </a>
+        <div class="flex gap-2">
+          <a
+            href="https://www.linkedin.com/in/ya%C4%9Fmur-gazezo%C4%9Flu-283150212/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="https://github.com/ygazez">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+              ></path>
+            </svg>
+          </a>
+
+          <img
+            align="center"
+            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"
+            alt="@yagmurgazezoglu"
+            height="28"
+            width="28"
+            style="max-width: 28px"
+          />
+        </div>
+      </div>
+      <img class="rounded-full w-20 h-20" src="assets/me.jpeg" />
+    </div>
   </div>
 
-  <div class="flex flex-col sm:flex-row p-24 justify-center items-center">
+  <div class="flex flex-col sm:flex-row p-24 pt-12 justify-center items-center">
     <img class="mt-20 min-w-[400px]" src="assets/developer.png" />
     <div class="mt-32">
       <span class="text-[24px]">
@@ -106,18 +133,27 @@
               <div class="flex flex-col flex-wrap">
                 <span class="text-lg">Frontend Developer</span>
                 <span class="text-xs">Acıbadem Technology</span>
-                <span class="text-xs"> 1 year 6 months</span>
+                <span class="text-xs"> 1 Sept 2022 / - </span>
               </div>
             </div>
           </div>
 
-          <div class="w-16 min-w-14 rotate-90 ml-20 h-10">
-            <span class="subheading2"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+          <div class="w-6 min-w-6 animate-bounce h-6">
+            <span class="subheading2">
+              <svg
+                fill="#ffffff"
+                height="25px"
+                width="25px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve"
+              >
                 <path
-                  style="fill: #ffffff"
-                  d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
-                  data-name="Right"
+                  d="M490,254.451V0.419L245,235.953L0,0.419v254.032l245,235.131L490,254.451z M30.625,72.346L245,278.421L459.375,72.346
+             v169.036L245,447.143L30.625,241.381V72.346z"
                 />
               </svg>
             </span>
@@ -165,21 +201,16 @@
                 style="max-width: 100%"
               />
 
-              <p align="left">
-                <a
-                  href="https://www.w3schools.com/css/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                    alt="css3"
-                    width="40"
-                    height="40"
-                  />
-                </a>
-              </p>
+              <img
+                class="min-w-[40px] min-h-[40x]"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                alt="css3"
+                width="40"
+                height="40"
+              />
+
               <svg
+                class="min-w-[40px] min-h-[40x]"
                 width="40px"
                 height="40px"
                 viewBox="0 0 16 16"
@@ -210,7 +241,7 @@
 
               <svg
                 viewBox="0 0 248 31"
-                class="text-slate-900 dark:text-white w-auto h-5"
+                class="text-slate-900 dark:text-white min-w-[40px] min-h-[40px] w-auto h-5"
               >
                 <path
                   fill-rule="evenodd"
@@ -240,18 +271,27 @@
               <div class="flex flex-col flex-wrap">
                 <span class="text-lg">Frontend Developer Intern</span>
                 <span class="text-xs">Mobven Technology</span>
-                <span class="text-xs"> 2 months</span>
+                <span class="text-xs"> July 2022 - Sept 2022</span>
               </div>
             </div>
           </div>
 
-          <div class="w-16 min-w-14 rotate-90 ml-20 h-10">
-            <span class="subheading4"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+          <div class="w-6 min-w-14 animate-bounce h-6">
+            <span class="subheading4">
+              <svg
+                fill="#ffffff"
+                height="25px"
+                width="25px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve"
+              >
                 <path
-                  style="fill: #ffffff"
-                  d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
-                  data-name="Right"
+                  d="M490,254.451V0.419L245,235.953L0,0.419v254.032l245,235.131L490,254.451z M30.625,72.346L245,278.421L459.375,72.346
+           v169.036L245,447.143L30.625,241.381V72.346z"
                 />
               </svg>
             </span>

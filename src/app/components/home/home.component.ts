@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -19,7 +20,6 @@ export class HomeComponent {
         root.style.setProperty('--mouse-x', x.toString());
         root.style.setProperty('--mouse-y', y.toString());
       });
-      // Your client-side code that uses window goes here
     }
   }
 }
